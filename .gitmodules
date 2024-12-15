@@ -1,3 +1,51 @@
 [submodule "Steganography-with-Image-File-Lab"]
 	path = Steganography-with-Image-File-Lab
 	url = https://github.com/WPI-LIONS-Group/Steganography-with-Image-File-Lab.git
+[submodule "Steganography-with-Audio-File-Lab"]
+	path = Steganography-with-Audio-File-Lab
+	url = https://github.com/WPI-LIONS-Group/Steganography-with-Audio-File-Lab.git
+[submodule "Reverse-Engineering-IDA-Lab"]
+	path = Reverse-Engineering-IDA-Lab
+	url = https://github.com/WPI-LIONS-Group/Reverse-Engineering-IDA-Lab.git
+[submodule "Reverse-Engineering-Ghidra-Lab"]
+	path = Reverse-Engineering-Ghidra-Lab
+	url = https://github.com/WPI-LIONS-Group/Reverse-Engineering-Ghidra-Lab.git
+[submodule "Developing-Your-Own-Image-Steganography-Tool-Lab"]
+	path = Developing-Your-Own-Image-Steganography-Tool-Lab
+	url = https://github.com/WPI-LIONS-Group/Developing-Your-Own-Image-Steganography-Tool-Lab.git
+[submodule "Basic-Data-Hiding-Techniques-Lab"]
+	path = Basic-Data-Hiding-Techniques-Lab
+	url = https://github.com/WPI-LIONS-Group/Basic-Data-Hiding-Techniques-Lab.git
+[submodule "Basic-Forensic-Analysis-using-Autopsy-Lab"]
+	path = Basic-Forensic-Analysis-using-Autopsy-Lab
+	url = https://github.com/WPI-LIONS-Group/Basic-Forensic-Analysis-using-Autopsy-Lab.git
+[submodule "Windows-Data-Acquisition-Lab"]
+	path = Windows-Data-Acquisition-Lab
+	url = https://github.com/WPI-LIONS-Group/Windows-Data-Acquisition-Lab.git
+[submodule "Network-Forensics-with-Xplico-Lab"]
+	path = Network-Forensics-with-Xplico-Lab
+	url = https://github.com/WPI-LIONS-Group/Network-Forensics-with-Xplico-Lab.git
+[submodule "Memory-Forensics-Lab"]
+	path = Memory-Forensics-Lab
+	url = https://github.com/WPI-LIONS-Group/Memory-Forensics-Lab.git
+[submodule "Forensics-on-Discord-Lab"]
+	path = Forensics-on-Discord-Lab
+	url = https://github.com/WPI-LIONS-Group/Forensics-on-Discord-Lab.git
+[submodule "File-Carving-Lab"]
+	path = File-Carving-Lab
+	url = https://github.com/WPI-LIONS-Group/File-Carving-Lab.git
+[submodule "Examine-Windows-NTFS-using-WinHex-Lab"]
+	path = Examine-Windows-NTFS-using-WinHex-Lab
+	url = https://github.com/WPI-LIONS-Group/Examine-Windows-NTFS-using-WinHex-Lab.git
+[submodule "Drone-Forensics-Lab"]
+	path = Drone-Forensics-Lab
+	url = https://github.com/WPI-LIONS-Group/Drone-Forensics-Lab.git
+[submodule "Data-Acquisition-Using-dd-Lab"]
+	path = Data-Acquisition-Using-dd-Lab
+	url = https://github.com/WPI-LIONS-Group/Data-Acquisition-Using-dd-Lab.git
+[submodule "Anti-Forensics-Techniques-Lab"]
+	path = Anti-Forensics-Techniques-Lab
+	url = https://github.com/WPI-LIONS-Group/Anti-Forensics-Techniques-Lab.git
+[submodule "Android-Forensics-Lab"]
+	path = Android-Forensics-Lab
+	url = https://github.com/WPI-LIONS-Group/Android-Forensics-Lab.git
