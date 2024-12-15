@@ -45,4 +45,20 @@ jobs:
           gh release create "$tag" \
             --title "$tag" \
             --notes "Release $tag" \
-            *.iso
+          Android-Forensics-Lab.iso \
+          Anti-Forensics-Techniques-Lab.iso \
+          Basic-Data-Hiding-Techniques-Lab.iso \
+          Basic-Forensic-Analysis-using-Autopsy-Lab.iso \
+          Data-Acquisition-Using-dd-Lab.iso \
+          Developing-Your-Own-Image-Steganography-Tool-Lab.iso \
+          Drone-Forensics-Lab.iso \
+          Examine-Windows-NTFS-using-WinHex-Lab.iso \
+          File-Carving-Lab.iso \
+          Forensics-on-Discord-Lab.iso \
+          Memory-Forensics-Lab.iso \
+          Network-Forensics-with-Xplico-Lab.iso \
+          Reverse-Engineering-Ghidra-Lab.iso \
+          Reverse-Engineering-IDA-Lab.iso \
+          Steganography-with-Audio-File-Lab.iso \
+          Steganography-with-Image-File-Lab.iso \
+          Windows-Data-Acquisition-Lab.iso
