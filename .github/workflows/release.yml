@@ -30,12 +30,90 @@ jobs:
           tar -xvf Basic-Forensic-Analysis-using-Autopsy-Lab/src/image_zero.tar.gz -C Basic-Forensic-Analysis-using-Autopsy-Lab/src/
           rm Basic-Forensic-Analysis-using-Autopsy-Lab/src/image_zero.tar.gz
 
-      - name: Create ISO for each repository submodule
+      - name: Create Android-Forensics-Lab.iso
         run: |
-          for d in */ ; do
-            dd if=/dev/zero of=$d.iso bs=512 count=1171875
-            mkisofs -o $d.iso $d
-          done
+          dd if=/dev/zero of=Android-Forensics-Lab.iso bs=512 count=200000
+          mkisofs -o Android-Forensics-Lab.iso Android-Forensics-Lab/src/
+
+      - name: Create Anti-Forensics-Techniques-Lab.iso
+        run: |
+          dd if=/dev/zero of=Android-Forensics-Lab.iso bs=512 count=200000
+          mkisofs -o Android-Forensics-Lab.iso Android-Forensics-Lab/src/
+
+      - name: Create Basic-Data-Hiding-Techniques-Lab.iso
+        run: |
+          dd if=/dev/zero of=Android-Forensics-Lab.iso bs=512 count=200000
+          mkisofs -o Android-Forensics-Lab.iso Android-Forensics-Lab/src/
+
+      - name: Create Basic-Forensic-Analysis-using-Autopsy-Lab.iso
+        run: |
+          dd if=/dev/zero of=Android-Forensics-Lab.iso bs=512 count=1171875
+          mkisofs -o Android-Forensics-Lab.iso Android-Forensics-Lab/src/
+
+      - name: Create Data-Acquisition-Using-dd-Lab.iso
+        run: |
+          dd if=/dev/zero of=Android-Forensics-Lab.iso bs=512 count=200000
+          mkisofs -o Android-Forensics-Lab.iso Android-Forensics-Lab/src/
+
+      - name: Create Developing-Your-Own-Image-Steganography-Tool-Lab.iso
+        run: |
+          dd if=/dev/zero of=Android-Forensics-Lab.iso bs=512 count=200000
+          mkisofs -o Android-Forensics-Lab.iso Android-Forensics-Lab/src/
+
+      - name: Create Drone-Forensics-Lab.iso
+        run: |
+          dd if=/dev/zero of=Android-Forensics-Lab.iso bs=512 count=200000
+          mkisofs -o Android-Forensics-Lab.iso Android-Forensics-Lab/src/
+
+      - name: Create Examine-Windows-NTFS-using-WinHex-Lab.iso
+        run: |
+          dd if=/dev/zero of=Android-Forensics-Lab.iso bs=512 count=200000
+          mkisofs -o Android-Forensics-Lab.iso Android-Forensics-Lab/src/
+
+      - name: Create File-Carving-Lab.iso
+        run: |
+          dd if=/dev/zero of=Android-Forensics-Lab.iso bs=512 count=200000
+          mkisofs -o Android-Forensics-Lab.iso Android-Forensics-Lab/src/
+
+      - name: Create Forensics-on-Discord-Lab.iso
+        run: |
+          dd if=/dev/zero of=Android-Forensics-Lab.iso bs=512 count=200000
+          mkisofs -o Android-Forensics-Lab.iso Android-Forensics-Lab/src/
+
+      - name: Create Memory-Forensics-Lab.iso
+        run: |
+          dd if=/dev/zero of=Android-Forensics-Lab.iso bs=512 count=200000
+          mkisofs -o Android-Forensics-Lab.iso Android-Forensics-Lab/src/
+
+      - name: Create Network-Forensics-with-Xplico-Lab.iso
+        run: |
+          dd if=/dev/zero of=Android-Forensics-Lab.iso bs=512 count=200000
+          mkisofs -o Android-Forensics-Lab.iso Android-Forensics-Lab/src/
+
+      - name: Create Reverse-Engineering-Ghidra-Lab.iso
+        run: |
+          dd if=/dev/zero of=Android-Forensics-Lab.iso bs=512 count=200000
+          mkisofs -o Android-Forensics-Lab.iso Android-Forensics-Lab/src/
+
+      - name: Create Reverse-Engineering-IDA-Lab.iso
+        run: |
+          dd if=/dev/zero of=Android-Forensics-Lab.iso bs=512 count=200000
+          mkisofs -o Android-Forensics-Lab.iso Android-Forensics-Lab/src/
+
+      - name: Create Steganography-with-Audio-File-Lab.iso
+        run: |
+          dd if=/dev/zero of=Android-Forensics-Lab.iso bs=512 count=200000
+          mkisofs -o Android-Forensics-Lab.iso Android-Forensics-Lab/src/
+
+      - name: Create Steganography-with-Image-File-Lab.iso
+        run: |
+          dd if=/dev/zero of=Android-Forensics-Lab.iso bs=512 count=200000
+          mkisofs -o Android-Forensics-Lab.iso Android-Forensics-Lab/src/
+
+      - name: Create Windows-Data-Acquisition-Lab.iso
+        run: |
+          dd if=/dev/zero of=Android-Forensics-Lab.iso bs=512 count=200000
+          mkisofs -o Android-Forensics-Lab.iso Android-Forensics-Lab/src/
 
       - name: Create One Release with all the ISOs
         env:
