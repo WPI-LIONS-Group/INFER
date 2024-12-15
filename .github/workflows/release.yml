@@ -1,0 +1,48 @@
+name: Create release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Release pushed tag
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y mkisofs
+
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Pull all submodules
+        run: |
+          git submodule update --init --recursive
+
+      - name: Uncompress Basic-Forensic-Analysis-using-Autopsy-Lab/src/image_zero.tar.gz
+        run: |
+          tar -xvf Basic-Forensic-Analysis-using-Autopsy-Lab/src/image_zero.tar.gz -C Basic-Forensic-Analysis-using-Autopsy-Lab/src/
+          rm Basic-Forensic-Analysis-using-Autopsy-Lab/src/image_zero.tar.gz
+
+      - name: Create ISO for each repository submodule
+        run: |
+          for d in */ ; do
+            dd if=/dev/zero of=$d.iso bs=512 count=1171875
+            mkisofs -o $d.iso $d
+          done
+
+      - name: Create One Release with all the ISOs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          tag: ${{ github.ref_name }}
+        run: |
+          gh release create "$tag" \
+            --title "$tag" \
+            --notes "Release $tag" \
+            *.iso
