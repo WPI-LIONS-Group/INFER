@@ -1,1 +1,0 @@
-In this lab, participants will perform Data Acquisition using Window and Linux with different tools such as FTK imager, dd, Belkasoft. Autopsy is used to compare the data acquisition result.
